@@ -2,42 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Top Game Offer</title>
+  <title>Top Game Releases</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: sans-serif;
-      background: #0f172a;
+      background: #111827;
       color: white;
+      padding: 1rem;
+    }
+    header {
       text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #22d3ee;
-    }
-    p {
-      font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-    a {
-      background: #22d3ee;
-      color: black;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s;
+    header h1 {
+      font-size: 2rem;
+      color: #38bdf8;
     }
-    a:hover {
-      background: #0ea5e9;
+    .game-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .game-card {
+      background: #1f2937;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+    .game-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .game-title {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #facc15;
+    }
+    .download-btn {
+      background: #38bdf8;
+      color: #111827;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    .footer {
+      text-align: center;
+      color: #6b7280;
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <h1>🔥 Play & Win Prizes!</h1>
-  <p>Click below to start your journey in the top trending game of the year.</p>
-  <a href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
+
+  <header>
+    <h1>🎮 Hot New Games!</h1>
+    <p>Click any game to start playing now and win big!</p>
+  </header>
+
+  <div class="game-section">
+    <div class="game-card">
+      <img src="https://img.icons8.com/clouds/100/000000/roblox.png" alt="Game">
+      <div class="game-title">Roblox</div>
+      <a class="download-btn" href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
+    </div>
+    <div class="game-card">
+      <img src="https://img.icons8.com/clouds/100/000000/controller.png" alt="Game">
+      <div class="game-title">Rainbow Friends</div>
+      <a class="download-btn" href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
+    </div>
+    <div class="game-card">
+      <img src="https://img.icons8.com/clouds/100/000000/video-game.png" alt="Game">
+      <div class="game-title">Horror Night</div>
+      <a class="download-btn" href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 | YourGameHub</div>
+
 </body>
 </html>
