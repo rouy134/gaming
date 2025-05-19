@@ -2,39 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Top Game Releases</title>
+  <title>Top Trending Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: sans-serif;
-      background: #111827;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
       color: white;
       padding: 1rem;
     }
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      padding: 1rem;
+      background: #1e293b;
     }
-    header h1 {
-      font-size: 2rem;
-      color: #38bdf8;
+    h1 {
+      color: #22d3ee;
     }
-    .game-section {
+    .games-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1rem;
-      margin-bottom: 2rem;
+      margin-top: 1.5rem;
     }
     .game-card {
-      background: #1f2937;
-      padding: 1rem;
-      border-radius: 12px;
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
       text-align: center;
+      padding: 1rem;
       transition: transform 0.3s;
     }
     .game-card:hover {
@@ -46,53 +43,52 @@
     }
     .game-title {
       margin: 0.5rem 0;
-      font-size: 1rem;
-      color: #facc15;
-    }
-    .download-btn {
-      background: #38bdf8;
-      color: #111827;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
       font-weight: bold;
-      text-decoration: none;
+    }
+    .play-button {
       display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #22d3ee;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
       margin-top: 0.5rem;
     }
-    .footer {
+    footer {
       text-align: center;
-      color: #6b7280;
       margin-top: 2rem;
       font-size: 0.9rem;
+      color: #94a3b8;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>🎮 Hot New Games!</h1>
-    <p>Click any game to start playing now and win big!</p>
+    <h1>🎮 Top Free Games</h1>
+    <p>Click and play your favorite game now!</p>
   </header>
 
-  <div class="game-section">
+  <div class="games-grid">
     <div class="game-card">
-      <img src="https://img.icons8.com/clouds/100/000000/roblox.png" alt="Game">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/99/New_Super_Mario_Bros._box.png" alt="Mario">
+      <div class="game-title">Super Mario</div>
+      <a href="https://smrturl.co/54299a1" class="play-button" target="_blank">Play</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e2/Sonic_the_Hedgehog_1_Genesis_box_art.jpg" alt="Sonic">
+      <div class="game-title">Sonic</div>
+      <a href="https://smrturl.co/54299a1" class="play-button" target="_blank">Play</a>
+    </div>
+    <div class="game-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Roblox_Player_Icon.png" alt="Roblox">
       <div class="game-title">Roblox</div>
-      <a class="download-btn" href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
+      <a href="https://smrturl.co/54299a1" class="play-button" target="_blank">Play</a>
     </div>
-    <div class="game-card">
-      <img src="https://img.icons8.com/clouds/100/000000/controller.png" alt="Game">
-      <div class="game-title">Rainbow Friends</div>
-      <a class="download-btn" href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
-    </div>
-    <div class="game-card">
-      <img src="https://img.icons8.com/clouds/100/000000/video-game.png" alt="Game">
-      <div class="game-title">Horror Night</div>
-      <a class="download-btn" href="https://smrturl.co/54299a1" target="_blank">Play Now</a>
-    </div>
+    <!-- يمكنك إضافة المزيد من الألعاب بنفس الشكل -->
   </div>
 
-  <div class="footer">© 2025 | YourGameHub</div>
-
+  <footer>
+    © 2025 All rights reserved
+  </footer>
 </body>
 </html>
